@@ -16,7 +16,7 @@
         <init-param>
             <description>Location of base package for classpath scannig</description>
             <param-name>contextConfigLocation</param-name>
-            <param-value>name.prokop.bart.api</param-value>
+            <param-value>name.prokop.bart.SpringBootstrap</param-value>
         </init-param>
     </servlet>
 
