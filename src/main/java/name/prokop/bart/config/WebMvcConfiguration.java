@@ -7,14 +7,11 @@ import org.springframework.web.servlet.config.annotation.WebMvcConfigurerAdapter
 
 /**
  *
- * @author proko
+ * @author Bart Prokop
  */
 @Configuration
 @EnableWebMvc
 public class WebMvcConfiguration extends WebMvcConfigurerAdapter {
 
-    public WebMvcConfiguration() {
-        Logger.getLogger(WebMvcConfiguration.class.getName()).severe("HELLO");
-    }
-
+    private static final Logger LOGGER = Logger.getLogger(WebMvcConfiguration.class.getName());
 }

@@ -4,14 +4,17 @@ import name.prokop.bart.api.ApiComponentScanMarker;
 import name.prokop.bart.config.ConfigComponentScanMarker;
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
-import org.springframework.web.servlet.config.annotation.EnableWebMvc;
 
 /**
+ * This Java configuration class declares packages to be scanned by Spring
+ * annotation configured Context.
  *
  * @author Bart Prokop
  */
 @Configuration
-@ComponentScan(basePackageClasses = {ApiComponentScanMarker.class, ConfigComponentScanMarker.class})
+@ComponentScan(basePackageClasses = {
+    ApiComponentScanMarker.class,
+    ConfigComponentScanMarker.class
+})
 public class SpringBootstrap {
-
 }
