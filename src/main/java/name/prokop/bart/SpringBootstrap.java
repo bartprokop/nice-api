@@ -2,6 +2,7 @@ package name.prokop.bart;
 
 import name.prokop.bart.api.ApiComponentScanMarker;
 import name.prokop.bart.config.ConfigComponentScanMarker;
+import name.prokop.bart.service.ServiceComponentScanMarker;
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
 
@@ -14,7 +15,8 @@ import org.springframework.context.annotation.Configuration;
 @Configuration
 @ComponentScan(basePackageClasses = {
     ApiComponentScanMarker.class,
-    ConfigComponentScanMarker.class
+    ConfigComponentScanMarker.class,
+    ServiceComponentScanMarker.class
 })
 public class SpringBootstrap {
 }
